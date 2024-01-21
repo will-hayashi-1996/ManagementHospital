@@ -1,5 +1,11 @@
 CRUD feito em Laravel para um teste tecnico, foi utilizado Bootstrap no front-end, junto do Laravel blade, de Banco de Dados, utilizei Mysql, utilizei de rotas web para fazer o CRUD.
 
+Versão do PHP utilizada PHP 8.2.12
+
+Versão do Laravel utilizada Laravel Framework 10.41.0
+
+Versão do Composer utilizado Composer version 2.6.6
+
 Passos para instalar o projeto: 
 
 1-Instalar o PHP, o Laravel, o composer e o npm <br>
