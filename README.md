@@ -3,8 +3,27 @@ CRUD feito em Laravel para um teste tecnico.
 Passos para instalar o projeto: 
 
 1-Instalar o PHP, o Laravel, o composer e o npm <br>
-2-utilize o comando  cd './teste_tecnico_william_junji' para ir na pasta do projeto, caso seja necessário, e depois o comando 'composer require laravel/ui' para instalar o laravel ui <br>
-3- utilize o comando 'php artisan ui bootstrap --auth' para instalar o bootstrap, depois npm install, depois npm run dev, para rodar o bootstrap <br>
-4-Utilize o comando php artisan serve, para rodar o programa, a página inicial será essa <br>
+
+2-utilize o comando  cd './teste_tecnico_william_junji' para ir na pasta do projeto, caso seja necessário <br>
+
+3-No arquivo .env, faça as alterações que julgar necessário  em DB_USERNAME e  DB_PASSWORD, utilizei Mysql no Banco de dados e o Mysql Workbench <br>
+        DB_CONNECTION=mysql
+        DB_HOST=127.0.0.1
+        DB_PORT=3306
+        DB_DATABASE=teste_tecnico
+        DB_USERNAME=root
+        DB_PASSWORD=root <br>
+
+4-Crie uma database chamada 'teste_tecnico', utilizando o comando  no Mysqlworkbench 'CREATE DATABASE teste_tecnico;'<br>
+
+<img src="https://i.imgur.com/GUMTpim.png" title="source: imgur.com" /> <br>
+
+5-Utilize o comando php artisan migrate, para realizar a migração e criação das tabelas no MysqlWorkbench
+
+6-Use o comando 'composer require laravel/ui' para instalar o laravel ui, utilize após isso, o comando 'php artisan ui bootstrap --auth' para instalar o bootstrap, depois 'npm install', depois 'npm run dev', para rodar o bootstrap <br>
+
+7-Utilize o comando php artisan serve, para rodar o programa, a página inicial será essa <br>
 
 <img src="https://i.imgur.com/LVdb8TB.png" />
+
+8-Na imagem temos todas as funcionalidades exigidas de um CRUD, inicialmente, não terá nenhum médico, para inserir, clique em "Inserir Médico" na barra de navegação <br>
