@@ -43,15 +43,15 @@
                             <td><a href="{{ route('update', ['medico' => $medico->id , 'nome' => $medico->nome, 'cpf' => $medico->cpf, 'crm' => $medico->crm]) }}">Editar Médico</a></td>
                         </tr>
 
-
-      
                     @endforeach
                     </tbody>
                 </table>
 
-            
+                <div class="d-flex justify-content-center">
 
+                    {{ $medicos->links('pagination::bootstrap-4') }}
 
+                </div>
 
             </div>
         </div>

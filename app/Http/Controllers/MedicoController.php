@@ -15,13 +15,14 @@ class MedicoController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(Request $request)
+    public function index()
     {
         
-        $medicos = Medico::all();
+        $medicos = new Medico();
 
+        $medicos = $medicos->paginate(10);
 
-        return view('show',['request' =>$request->all(), 'medicos' => $medicos]);
+        return view('show',['medicos' => $medicos]);
     }
 
     /**
