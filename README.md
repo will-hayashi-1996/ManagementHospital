@@ -7,4 +7,4 @@ Passos para instalar o projeto:
 3- utilize o comando 'php artisan ui bootstrap --auth' para instalar o bootstrap, depois npm install, depois npm run dev, para rodar o bootstrap <br>
 4-Utilize o comando php artisan serve, para rodar o programa, a página inicial será essa <br>
 
-<a href="https://imgur.com/LVdb8TB"><img src="https://i.imgur.com/LVdb8TB.png" title="source: imgur.com" /></a>
+<img src="https://i.imgur.com/LVdb8TB.png" />
