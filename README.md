@@ -1,4 +1,4 @@
-CRUD feito em Laravel para um teste tecnico.
+CRUD feito em Laravel para um teste tecnico, foi utilizado Bootstrap no front-end, junto do Laravel blade, de Banco de Dados, utilizei Mysql, utilizei de rotas web para fazer o CRUD.
 
 Passos para instalar o projeto: 
 
