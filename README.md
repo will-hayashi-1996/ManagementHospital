@@ -6,13 +6,13 @@ Passos para instalar o projeto:
 
 2-utilize o comando  cd './teste_tecnico_william_junji' para ir na pasta do projeto, caso seja necessário <br>
 
-3-No arquivo .env, faça as alterações que julgar necessário  em DB_USERNAME e  DB_PASSWORD, utilizei Mysql no Banco de dados e o Mysql Workbench <br>
-        DB_CONNECTION=mysql
-        DB_HOST=127.0.0.1
-        DB_PORT=3306
-        DB_DATABASE=teste_tecnico
-        DB_USERNAME=root
-        DB_PASSWORD=root <br>
+3-No arquivo .env, faça as alterações que julgar necessário  em DB_USERNAME e  DB_PASSWORD, utilizei Mysql no Banco de dados e o Mysql Workbench, Segue em anexo as linhas 11 ao 16 do código .env<br><br>
+        DB_CONNECTION=mysql<br>
+        DB_HOST=127.0.0.1<br>
+        DB_PORT=3306<br>
+        DB_DATABASE=teste_tecnico<br>
+        DB_USERNAME=root<br>
+        DB_PASSWORD=root <br><br>
 
 4-Crie uma database chamada 'teste_tecnico', utilizando o comando  no Mysqlworkbench 'CREATE DATABASE teste_tecnico;'<br>
 
