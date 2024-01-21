@@ -20,7 +20,7 @@ Route::get('/', [MedicoController::class, 'index']);
 
 
 Route::get('/inserir', function () {
-    return view('inicio');
+    return view('insert');
 })->name('inserir');
 
 Route::get('/update/{medico}', [MedicoController::class, 'show'])->name('update');

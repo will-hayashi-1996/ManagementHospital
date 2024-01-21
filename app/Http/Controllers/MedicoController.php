@@ -10,6 +10,10 @@ use Illuminate\Support\Facades\Route;
 
 use Illuminate\Support\Facades\Redirect;
 
+use App\Http\Requests\StoreMedicoRequest;
+
+use App\Http\Requests\UpdateMedicoRequest;
+
 class MedicoController extends Controller
 {
     /**
@@ -36,30 +40,15 @@ class MedicoController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request, Medico $medico)
+    public function store(StoreMedicoRequest $request, Medico $medico)
     {
        
 
-        $regras = [
-            'nome' => 'required|string|max:255',
-            'cpf' => 'required|string|max:14|min:11',
-            'crm' => 'required|string|max:18'
-        ];
+        $validar=$request->validated();
 
-        $feedback = [
-            'required' => 'o campo ::attribute deve possuir um valor válido',
-            'cpf.min' => 'O campo cpf deve ter no minimo 11 caracteres',
-            'cpf.max' => 'O campo cpf deve ter no maximo 14 caracteres',
-            'crm.max' => 'O campo crm deve ter no maximo 18 caracteres',
-        ];
+        if($validar != null){ //caso a validação tenha dado certo, inserir
 
-        $validar=$request->validate($regras, $feedback);
-
-        if($validar == null){
-            return  Redirect::route('inicio');
-        }else{
-
-            $medico->create($request->all());
+            $medico->create($validar);
 
             return  Redirect::route('home');
         }
@@ -124,29 +113,14 @@ class MedicoController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Medico $medico)
+    public function update(UpdateMedicoRequest $request, Medico $medico)
     {
   
-        $regras = [
-            'nome' => 'required|string|max:255',
-            'cpf' => 'required|string|max:14|min:11',
-            'crm' => 'required|string|max:18'
-        ];
+        $validar=$request->validated();
 
-        $feedback = [
-            'required' => 'o campo ::attribute deve possuir um valor válido',
-            'cpf.min' => 'O campo cpf deve ter no minimo 11 caracteres',
-            'cpf.max' => 'O campo cpf deve ter no maximo 14 caracteres',
-            'crm.max' => 'O campo crm deve ter no maximo 18 caracteres',
-        ];
+        if($validar != null){ //caso a validação tenha dado certo, atualizar
 
-        $validar=$request->validate($regras, $feedback);
-
-        if($validar == null){
-            return  Redirect::route('update');
-        }else{
-
-            $medico->update($request->all());
+            $medico->update($validar);
 
             return  Redirect::route('home');
         }
