@@ -22,7 +22,7 @@
             <div class="container">
             <img src="{{asset('/images/medico-icone.png')}}"  width="42px" height="42px" class="ml-2">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Aplicativo de Listagem de Médicos
+                    Management Hospital
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
